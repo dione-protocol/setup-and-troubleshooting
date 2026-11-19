@@ -102,15 +102,49 @@ What this repository does not cover is the phrase itself, or the password that g
 
 </div>
 
+## What each guide changes
+
+<div align="center">
+
+| Task | Guide | Outcome |
+| --- | --- | --- |
+| Install on Windows | [Install DIONE Wallet on Windows 10 or 11](install-dione-wallet-on-windows.md) | A signed installer runs, the one system prompt is cleared, and a first wallet opens ready to be funded. |
+| Verify the download | [Download DIONE Wallet From the Official Source, Verified](download-dione-wallet-from-official-source.md) | The domain and the platform file are confirmed before anything executes, which is the step a copied installer cannot fake. |
+| Create the first wallet | [Create a New DIONE Wallet: First Run Walkthrough](create-a-new-dione-wallet.md) | A local password is set, the recovery words are written down, and the wallet is funded only after both are done. |
+| Put keys on a device | [Connect a Ledger to DIONE Wallet](connect-a-ledger-to-dione-wallet.md) | The device holds the keys, its own screen shows the address, and the application only asks for approval. |
+| Diagnose a fault | [DIONE Wallet Not Syncing: What to Check First](dione-wallet-not-syncing.md) | The build, the chain connection and the explorer answer are checked in that order before any repair is attempted. |
+
+</div>
+
+
 ## Common first questions
 
-**Do I need to reinstall to fix a wrong balance?** No, and doing so is the most common wasted afternoon in this cluster. A balance comes from the chain, so the explorer answer decides whether anything local is wrong at all. Reinstall only after a version check, a network check and an explorer check have all passed.
+### Do I need to reinstall to fix a wrong balance?
 
-**Which file should a Mac user take?** The disk image, on either architecture. The application is signed, so the first launch asks for approval in System Settings rather than warning about an unidentified developer. The Linux archive is not a macOS substitute and will not run there.
+No, and doing so is the most common wasted afternoon in this cluster. A balance comes from the chain, so the explorer answer decides whether anything local is wrong at all. Reinstall only after a version check, a network check and an explorer check have all passed.
 
-**The hardware device is not detected. Where do I start?** With the device guide for that model, in the order it gives: cable or card placement, then the device's own app or firmware, then the wallet build. Tangem has its own not-detected page because NFC placement fails more often than the card does.
+### Which file should a Mac user take?
 
-**Is a zero balance a loss?** Almost never. The three usual causes are a different network selected, a different address than the one funded, and a node that has not caught up. Each has a different fix, and the explorer distinguishes them in under a minute.
+The disk image, on either architecture. The application is signed, so the first launch asks for approval in System Settings rather than warning about an unidentified developer. The Linux archive is not a macOS substitute and will not run there.
+
+### The hardware device is not detected. Where do I start?
+
+With the device guide for that model, in the order it gives: cable or card placement, then the device's own app or firmware, then the wallet build. Tangem has its own not-detected page because NFC placement fails more often than the card does.
+
+### Is a zero balance a loss?
+
+Almost never. The three usual causes are a different network selected, a different address than the one funded, and a node that has not caught up. Each has a different fix, and the explorer distinguishes them in under a minute.
+
+### Do I have to uninstall the old version first?
+
+No. The installer replaces the application in place and the keys stay on disk, so a version upgrade is a normal install. Uninstalling first only matters when the file itself will not run, and the not-syncing guide says when that applies.
+
+## Before you install
+
+The application runs on Windows 10 (1909) or later in 64-bit, on macOS 12 or later for either architecture, and on 64-bit Linux such as Ubuntu 20.04 or an equivalent distribution. There is no package repository to add, no node to run beside it and no system library to install first: the platform file on the release page is the whole download.
+
+Confirm three things before the first launch, because each one is cheaper now than later. The file came from the release page above and not from a mirror. The machine meets the row for its platform in the table at the top of this page. The phrase from the first run is written down physically, since the application shows it once and never on request. If any of the three is still open, the guide for that step is in the list above and takes a few minutes.
+
 
 ---
 
